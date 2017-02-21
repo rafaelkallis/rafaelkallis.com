@@ -1,11 +1,6 @@
 ## [Personal Website](http://rafaelkallis.com)
 
-Build:
-
-```
-npm install -g brunch
-brunch build
-```
+Build using [Inferno](https://infernojs.org) and [Brunch](http://brunch.io).
 
 Deploy using docker:
 
