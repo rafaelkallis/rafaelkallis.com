@@ -1,0 +1,61 @@
+.text-align-center {
+    text-align: center;
+}
+
+.terminal-title {
+    padding: 5px 0;
+    background-color: #f8f8f8;
+    background-image: -webkit-linear-gradient(top, #e8e8e8, #bcbbbc);
+    background-image: -moz-linear-gradient(top, #e8e8e8, #bcbbbc);
+    background-image: linear-gradient(top, #e8e8e8, #bcbbbc);
+    box-shadow: inset rgba(255, 255, 255, 0.7) 0 1px 1px;
+    border-bottom: #6a6a6a 1px solid;
+}
+
+.background-terminal {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #f0f0f0;
+}
+
+.cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+body {
+    background: url(../img/web_zurich_seebecken_megateaser1600x900.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+}
+
+.external-site {
+    margin: 0 10px 0 10px;
+}
+
+@media only screen and (max-width: 750px){
+    .visible-desktop{ display: none;}
+}
+
+@media only screen and (min-width: 750px){
+    .visible-mobile{ display: none;}
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+html {
+	height: 100%;
+}
