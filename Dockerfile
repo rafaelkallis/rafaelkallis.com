@@ -1,14 +1,18 @@
-FROM rafaelkallis/alpine-node-nginx
+# ---- Sources ----
+FROM node:carbon AS base
+WORKDIR /app
+COPY package*.json /app
 
-MAINTAINER Rafael Kallis <rk@rafaelkallis.com>
+# ---- Dependencies ----
+FROM base AS dependencies
+RUN npm install
 
-COPY app /tmp/app
-COPY package.json /tmp
-COPY brunch-config.js /tmp
+# ---- Build ----
+FROM dependencies AS build  
+COPY src /app/src
+COPY public /app/public
+RUN npm run build
 
-RUN cd /tmp \
-    && npm install \
-    && npm run prod \
-    && mv public/* /usr/share/nginx/html \
-    && cd / \
-    && rm -r /tmp/*
+# --- Release with Alpine
+FROM nginx:alpine AS release
+COPY --from=build /app/build /usr/share/nginx/html
