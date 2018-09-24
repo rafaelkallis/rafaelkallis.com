@@ -12,7 +12,16 @@ export default function Abstract(props) {
       className={'abstract-text ' + (props.className ? props.className : '')}>
       <h3>Abstract</h3>
       <p>
-        Doing my Master's degree in Computer Science at the{' '}
+        Software engineer at{' '}
+        <a
+          href="https://covee.network"
+          target="_blank"
+          rel="noreferrer noopener">
+          Covee Network
+        </a>.
+      </p>
+      <p>
+        Master's degree in Computer Science at the{' '}
         <a
           href="http://www.ifi.uzh.ch/en.html"
           target="_blank"
@@ -21,10 +30,13 @@ export default function Abstract(props) {
         </a>.
       </p>
       <p>
-        Self motivated Software Engineer currently working on an enterprise
-        social network with 4000 users build using state of the art
-        Typescript/React on the front-end and a Node.js/PostgreSQL stack on the
-        back-end.
+        I work on a daily basis on a node.js backend with
+        relational databases and solidity smart contracts.
+        I love designing large scale system/blockchain architectures.
+      </p>
+      <p>
+        During the weekend, I'm building  my own database system (from scratch).
+        Occasionaly, I read some database and distributed systems literature.
       </p>
     </div>
   );

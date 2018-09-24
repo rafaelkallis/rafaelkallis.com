@@ -40,9 +40,15 @@ const skills = [
   'nosql',
   'algorithms',
   'data structures',
+  'solidity',
+  'distributed systems',
+  'scalability',
+  'smart contracts',
+  'dbms',
+  'architecture'
 ];
 
-const primarySkills = new Set(['web', 'databases', 'java', 'javascript']);
+const primarySkills = new Set(['web', 'databases', 'smart contracts', 'javascript', 'dbms', 'architecture']);
 
 function Skill({children, primary}) {
   return (

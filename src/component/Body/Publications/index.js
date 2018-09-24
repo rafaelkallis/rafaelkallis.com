@@ -6,6 +6,7 @@ import React from 'react';
 import onTheEffectsOf from './on_the_effects_of_cognitive_bias_and_test_driven_development_Rafael_Kallis_2017.pdf';
 import vertiefungsArbeit from './detecting_volatile_index_nodes_in_apache_jackrabbit_oak_Rafael_Kallis_2017.pdf';
 import bscThesis from './an_adaptive_index_for_hierarchical_database_systems_Rafael_Kallis_2018.pdf';
+import art from './the_adaptive_radix_tree_rafael_kallis.pdf';
 
 export default function Publications(props) {
   return (
@@ -39,6 +40,23 @@ function Publication({title, abstract, link, date}) {
 const publications = [
   {
     title:
+      'The Adaptive Radix Tree',
+    abstract: [
+      `The goal of this project is to study and implement 
+      the Adaptive Radix Tree (ART), as proposed by Leis et al.`,
+      `ART, which is a trie based data structure, achieves its 
+      performance, and space efficiency, by compressing the tree 
+      both vertically, i.e., if a node has no siblings it is 
+      merged with its parent, and horizontally, i.e., uses an 
+      array which grows as the number of children increases. 
+      Vertical compression reduces the tree height and horizontal 
+      compression decreases a node’s size.`,
+    ],
+    date: new Date(2018, 8),
+    link: art,
+  },
+  {
+    title:
       'An Adaptive Index for Hierarchical Distributed Database Systems (BSc Thesis)',
     abstract: [
       `The workload-aware property index is a hierarchical 
@@ -56,7 +74,7 @@ const publications = [
       and show that the database throughput increases considerably when 
       periodic Garbage Collection or Query-Time Pruning are applied.`,
     ],
-    date: new Date(2018, 2),
+    date: new Date(2018, 1),
     link: bscThesis,
   },
   {
