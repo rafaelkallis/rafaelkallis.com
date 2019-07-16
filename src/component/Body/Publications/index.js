@@ -3,10 +3,10 @@
  */
 
 import React from 'react';
-import onTheEffectsOf from './on_the_effects_of_cognitive_bias_and_test_driven_development_Rafael_Kallis_2017.pdf';
 import vertiefungsArbeit from './detecting_volatile_index_nodes_in_apache_jackrabbit_oak_Rafael_Kallis_2017.pdf';
 import bscThesis from './an_adaptive_index_for_hierarchical_database_systems_Rafael_Kallis_2018.pdf';
 import art from './the_adaptive_radix_tree_rafael_kallis.pdf';
+import ticketTagger from './ticket_tagger_tool_demo.pdf';
 
 export default function Publications(props) {
   return (
@@ -38,6 +38,18 @@ function Publication({title, abstract, link, date}) {
 }
 
 const publications = [
+  {
+    title:
+      'Ticket Tagger: Machine Learning Driven Issue Classification (IEEE ICSME, 2019)',
+    abstract: [
+      "Software maintenance is crucial for software projects evolution and success: code should be kept up-to-date and error-free, this with little effort and continuous updates for the end-users. In this context, issue trackers are  essential tools for creating, managing and addressing the several (often hundreds of) issues that occur in software systems.",
+      "A critical aspect for handling and prioritizing issues involves the assignment of labels to them (e.g., for projects hosted on GitHub), in order to determine the type (e.g., bug report, feature request and so on) of each specific issue. Although this labeling process has a positive impact on the effectiveness of issue processing, the current labeling mechanism is scarcely used on GitHub.",
+      "In this demo, we introduce a tool, called Ticket Tagger, which leverages machine learning strategies on issue titles and descriptions for automatically labeling GitHub issues.",
+      "Ticket Tagger automatically predicts the labels to assign to issues, with the aim of stimulating the use of labeling mechanisms in software projects, this to facilitate the issue management and prioritization processes. Along with the presentation of the tool's architecture and usage, we also evaluate its effectiveness in performing the issue labeling/classification process, which is critical to help maintainers to keep control of their workloads by focusing on the most critical issue tickets."
+    ],
+    date: new Date(2019, 5),
+    link: ticketTagger,
+  },
   {
     title:
       'The Adaptive Radix Tree',
@@ -76,22 +88,6 @@ const publications = [
     ],
     date: new Date(2018, 1),
     link: bscThesis,
-  },
-  {
-    title: 'Confirmation Bias in Software Engineering',
-    abstract: [
-      `In this paper, an overview of related work 
-    reasoning how confirmation bias and test driven development 
-    affects software quality will be presented. Specifically, I 
-    will reason how confirmation bias is present in software engineering 
-    and where it emerges from.`,
-      `Additionally, we will see if test driven 
-    development shows any impact on confirmation bias or productivity 
-    levels. With respect to the found conclusions, some suggestions 
-    will be made on how software quality can be increased.`,
-    ],
-    date: new Date(2017, 4),
-    link: onTheEffectsOf,
   },
   {
     title: 'Detecting Volatile Index Nodes in a Hierarchical Database System',
