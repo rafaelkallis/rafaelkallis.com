@@ -1,40 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--  -->
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rafael Kallis</title>
+    <meta name="description" content="Creating value from disruption.">
+    <meta name="robots" content="index, archive">
+    <link ref="canonical" href="https://rafaelkallis.com">
+    <meta property="og:title" content="Rafael Kallis Consulting">
+    <meta property="og:description" content="Creating value from disruption.">
+    <meta property="og:image" content="https://rafaelkallis.com/rafael.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rafaelkallis.com/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0MG63TJ6NG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-0MG63TJ6NG');
+    </script>
   </head>
   <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- header -->
+    <section class="section mt-6">
+      <div class="container is-max-desktop">
+        <div class="block">
+          <h1 class="title">Rafael Kallis</h1>
+          <p class="subtitle">Creating value from disruption.</p>
+        </div>
+        <div class="block">
+          <a href="https://github.com/rafaelkallis"  rel="noopener noreferrer" target="_blank">
+            <span class="tag is-medium is-link is-light">
+               &#x1f855; Github
+            </span>
+          </a>
+          <a href="mailto:rk [at] rafaelkallis [dot] com"  rel="noopener noreferrer" target="_blank">
+            <span class="ml-1 tag is-medium is-link is-light">
+              &#x1f855; Email
+            </span>
+          </a>
+          <a href="https://linkedin.com/in/rafaelkallis"  rel="noopener noreferrer" target="_blank">
+            <span class="ml-1 tag is-medium is-link is-light">
+              &#x1f855; Linkedin
+            </span>
+          </a>
+          <a href="https://scholar.google.com/citations?user=1jF52d4AAAAJ&hl=en&oi=ao"  rel="noopener noreferrer" target="_blank">
+            <span class="ml-1 tag is-medium is-link is-light">
+              &#x1f855; Scholar
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- about -->
+    <section id="about" class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-5"><a href="#about">About</a></h2>
+        <div class="content">
+          I am a software engineer working on projects that combine engineering, disruptive technologies and business.
+          My homebase is located at Zurich, Switzerland and my main clients are financial technology businesses.
+          Over the years I have developed a skillset in fullstack and blockchain software development, as well as data science expertise.
+          Outside my industry activities I also author and review academic papers.
+        </div>
+      </div>
+    </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <!-- projects clients -->
+    <section id="clients-and-projects" class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-5"><a href="#clients-and-projects">Clients and Projects</a></h2>
+
+        <!-- bob -->
+        <div class="block">
+          <div class="columns">
+            <div class="column is-1">
+              <figure class="image is-64x64">
+                <img src="bob.png" alt="logo of bob finance">
+              </figure>
+            </div>
+            <div class="column">
+              <p class="subtitle is-5"><a href="https://bob.ch/en/welcome/" rel="noopener noreferrer" target="_blank">Bob Finance</a>, Software Engineering Consultant, 2020-</p>
+              <div class="content">
+                <div>Payment and financing solutions for private individuals and companies.</div>
+                <div>Internal financing application dashboard for customer support and risk management.</div>
+                <div>Partner dashboard for retailers to provide 'buy now, pay later' solutions.</div>
+                <div>Client dashboard for customers access.</div>
+                <div>Migration of legacy loan management system to a modern cloud banking platform.</div>
+              </div>
+              <div>
+                <span class="tag">C#</span>
+                <span class="tag">Identity Server</span>
+                <span class="tag">Typescript</span>
+                <span class="tag">React</span>
+                <span class="tag">Cypress</span>
+                <span class="tag">Azure AD</span>
+                <span class="tag">Postgres</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">Azure Devops</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- valdon -->
+        <div class="block">
+          <div class="columns">
+            <div class="column is-1">
+              <figure class="image is-48x48 ml-2">
+                <img src="valdongroup.png" alt="logo of valdon group">
+              </figure>
+            </div>
+            <div class="column">
+              <p class="subtitle is-5"><a href="https://valdongroup.com/" rel="noopener noreferrer" target="_blank">Valdon Group</a>, Software Engineering Consultant, 2020-</p>
+              <div class="content">
+                <div>Consultancy and software services in the field of financial technology.</div>
+                <div>Working a market maker that arbitrates across orderbook (centralized) and liquidity-pool (decentralized) based markets.</div>
+                <div>Implemented a machine-learning pipeline for aggregating a very large dataset efficiently, based on statistical network analysis algorithms.</div>
+                <div>Developer near-shoring, talent scouting and acquiring.</div>
+              </div>
+              <div>
+                <span class="tag">C#</span>
+                <span class="tag">Python</span>
+                <span class="tag">NetworkX</span>
+                <span class="tag">Solidity</span>
+                <span class="tag">Ethereum</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- hederastarter -->
+        <div class="block">
+          <div class="columns">
+            <div class="column is-1">
+              <figure class="image is-64x64">
+                <img src="hederastarter.svg" alt="logo of hederastarter">
+              </figure>
+            </div>
+            <div class="column">
+              <p class="subtitle is-5"><a href="https://hederastarter.fi" rel="noopener noreferrer" target="_blank">HederaStarter</a>, Software Engineering Consultant, 2022-</p>
+              <div class="content">
+                <div>Tokenized innovation incubator and community oriented launchpad.</div>
+                <div>Launchpad dapp development.</div>
+                <div>Developing a realtime hashgraph transaction log tracker.</div>
+                <div>Researching integration of ethereum json-rpc compatible wallets to hedera dapps.</div>
+                <div></div>
+              </div>
+              <div>
+                <span class="tag">Solidity</span>
+                <span class="tag">Hedera Hashgraph</span>
+                <span class="tag">Go</span>
+                <span class="tag">Clickhouse</span>
+                <span class="tag">Typescript</span>
+                <span class="tag">React</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- bravoone -->
+        <div class="block">
+          <div class="columns">
+            <div class="column is-1">
+              <figure class="image is-64x64">
+                <img src="bravoone.png" alt="logo of bravo one">
+              </figure>
+            </div>
+            <div class="column">
+              <p class="subtitle is-5"><a href="https://bravo.one" rel="noopener noreferrer" target="_blank">Bravo One</a>, Partner, 2020-</p>
+              <div class="content">
+                <div>Employee recognition and reward system for the tourism industry.</div>
+                <div>Review mining, word embeddings, dimensionality reduction, feature engineering.</div>
+                <div>Automated human review collection from TripAdvisor, Booking.com and Google Maps.</div>
+                <div>Product owner of native app, web app and backend.</div>
+                <div>Interactions with B2B partners for api integrations.</div>
+              </div>
+              <div>
+                <span class="tag">Python</span>
+                <span class="tag">SpaCy</span>
+                <span class="tag">Typescript</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- tickettagger -->
+        <div class="block">
+          <div class="columns">
+            <div class="column is-1">
+              <figure class="image is-48x48 ml-2">
+                <img src="tickettagger.png" alt="logo of ticket tagger">
+              </figure>
+            </div>
+            <div class="column">
+              <p class="subtitle is-5"><a href="https://github.com/rafaelkallis/ticket-tagger" rel="noopener noreferrer" target="_blank">Ticket Tagger</a>, Researcher, Maintainer, 2019-</p>
+              <div class="content">
+                <div>Automated github issue type classification bot.</div>
+                <div>Developing a github bot that utilizes machine learning and word embedding techniques to automate the issue classification process on github.</div>
+                <div>Authored journal and conference papers on automated issue type prediction of software repositories.</div>
+              </div>
+              <div>
+                <span class="tag">Python</span>
+                <span class="tag">FastText</span>
+                <span class="tag">Typescript</span>
+                <span class="tag">Node.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- covee -->
+        <div class="block">
+          <div class="columns">
+            <div class="column is-1">
+              <figure class="image is-64x64">
+                <img src="coveenetwork.png" alt="logo of covee network">
+              </figure>
+            </div>
+            <div class="column">
+              <p class="subtitle is-5"><a href="https://covee.network" rel="noopener noreferrer" target="_blank">Covee Network</a>, Partner, 2020-2021</p>
+              <div class="content">
+                <div>Decentralized collaboration and reward platform for knowledge workers.</div>
+                <div>Co-product owner and engineer over frontend, backend and smart contracts.</div>
+                <div>Mechanism design of Covee's decentralized reward distribution mechanism.</div>
+              </div>
+              <div>
+                <span class="tag">Typescript</span>
+                <span class="tag">React</span>
+                <span class="tag">Solidity</span>
+                <span class="tag">Ethereum</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">NestJS</span>
+                <span class="tag">Postgres</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- occam -->
+        <div class="block">
+          <div class="columns">
+            <div class="column is-1">
+              <figure class="image is-48x48 ml-2">
+                <img src="occ.png" alt="logo of occam x">
+              </figure>
+            </div>
+            <div class="column">
+              <p class="subtitle is-5"><a href="https://occam-x.fi/" rel="noopener noreferrer" target="_blank">OccamX</a>, Software Engineering Consultant, 2021</p>
+              <div class="content">
+                <div>Decentralized exchange for Cardano native tokens.</div>
+                <div>Liquidity pool dapp development.</div>
+              </div>
+              <div>
+                <span class="tag">Typescript</span>
+                <span class="tag">React</span>
+                <span class="tag">Solidity</span>
+                <span class="tag">Milkomeda</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- academic work -->
+    <section id="academic-work" class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-5"><a href="#academic-work">Academic Work</a></h2>
+
+        <!-- nlbse 2022 -->
+        <div class="block mb-6">
+          <div class="columns">
+            <div class="column is-1">
+              <figure class="image is-64x64">
+                <img src="kallis-nlbse.png" alt="cover page of nlbse paper" style="border: 1px solid grey">
+              </figure>
+            </div>
+            <div class="column">
+              <p class="subtitle is-5"><a href="https://ieeexplore.ieee.org/abstract/document/9808595" rel="noopener noreferrer" target="_blank">NLBSE'22 Tool Competition</a>, Co-Chair, 2022</p>
+              <div class="content">
+                <div>IEEE/ACM 1st intl. workshop on Natural Language-Based Software Engineering (NLBSE).</div>
+                <div>Competition on github issue type prediction performance.</div>
+                <div>Dataset encompassing 800 thousand github issues.</div>
+                <div>Five team submissions, eleven models evaluated.</div>
+              </div>
+              <div>
+                <span class="tag">Benchmark</span>
+                <span class="tag">Natural language processing</span>
+                <span class="tag">Software maintenance and evolution</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- kallis 2021 -->
+        <div class="block mb-6">
+          <div class="columns">
+            <div class="column is-1">
+              <figure class="image is-64x64">
+                <img src="kallis-predicting.png" alt="cover page of kallis paper" style="border: 1px solid grey">
+              </figure>
+            </div>
+            <div class="column">
+              <p class="subtitle is-5"><a href="https://doi.org/10.1016/j.scico.2020.102598" rel="noopener noreferrer" target="_blank">Predicting issue types on GitHub</a>, First Author, 2021</p>
+              <div class="content">
+                <div>Published in the Journal of Science of Computer Programming.</div>
+                <div>Tool paper on automated github issue prediction.</div>
+                <div>Empirical evaluation on 30 thousand github issues.</div>
+              </div>
+              <div>
+                <span class="tag">Software maintenance and evolution</span>
+                <span class="tag">Issue reports management</span>
+                <span class="tag">Labeling unstructured data</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- reviewer -->
+        <div class="block mb-6">
+          <div class="columns">
+            <div class="column is-1">
+              <figure class="image is-64x64">
+                <img src="ist-cover.gif" alt="cover page of journal" style="border: 1px solid grey">
+              </figure>
+            </div>
+            <div class="column">
+              <p class="subtitle is-5">Reviewer, 2021-</p>
+              <div class="content">
+                <div>Journal of <a href="https://www.journals.elsevier.com/information-and-software-technology" rel="noopener noreferrer" target="_blank">Information and Software Technology</a>.</div>
+                <div>Journal of <a href="https://www.journals.elsevier.com/science-of-computer-programming" rel="noopener noreferrer" target="_blank">Science of Computer Programming</a>.</div>
+                <div>Workshop on Natural Language-based Software Engineering.</div>
+              </div>
+              <div>
+                <span class="tag">Software maintenance and evolution</span>
+                <span class="tag">Issue reports management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- recent good reads -->
+    <section id="recent-good-reads" class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-5"><a href="#recent-good-reads">Recent Good Reads</a></h2>
+
+        <!-- factor investing -->
+        <div class="block mb-6">
+          <div class="columns">
+            <div class="column is-1">
+              <figure class="image is-64x64 mb-4">
+                <img src="berkin-swedroe-factor-investing.jpg" alt="book on factor investing">
+              </figure>
+            </div>
+            <div class="column">
+              <p class="subtitle is-5">Your Complete Guide to Factor-Based Investing, Berkin and Swedroe</p>
+              <div class="content">
+                <div></div>
+              </div>
+              <div>
+                <span class="tag">Distilled Research</span>
+                <span class="tag">Personal Finance</span>
+                <span class="tag">Factor Investing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- weapons math destruction -->
+        <div class="block mb-6">
+          <div class="columns">
+            <div class="column is-1">
+              <figure class="image is-64x64 mb-4">
+                <img src="oneil-weapons-math-destruction.jpg" alt="book on math">
+              </figure>
+            </div>
+            <div class="column">
+              <p class="subtitle is-5">Weapons of Math Destruction, Cathy O'Neil</p>
+              <div class="content">
+                <div></div>
+              </div>
+              <div>
+                <span class="tag">Model Bias</span>
+                <span class="tag">Impact of Science</span>
+                <span class="tag">Responsible Data Mining</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- fooled by randomness -->
+        <div class="block">
+          <div class="columns">
+            <div class="column is-1">
+              <figure class="image is-64x64 mb-4">
+                <img src="taleb-fooled-by-randomness.jpg" alt="book on randomness">
+              </figure>
+            </div>
+            <div class="column">
+              <p class="subtitle is-5">Fooled by Randomness, Nassim Nicholas Taleb</p>
+              <div class="content">
+                <div></div>
+              </div>
+              <div>
+                <span class="tag">Luck and Uncertainty</span>
+                <span class="tag">Stories</span>
+                <span class="tag">Personal Finance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer mt-6">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>© 2018-<span id="year"></span> <strong>Rafael Kallis Consulting</strong></p>
+          <p>Website was inspired by my friends <a href="https://jonny.io" rel="noopener noreferrer" target="_blank">Jonny</a> and <a href="https://www.valentino.io" rel="noopener noreferrer" target="_blank">Valentino</a>.</p>
+          <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+          </script>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
