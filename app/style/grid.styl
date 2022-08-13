@@ -1,8 +1,0 @@
-$columns= 1 2 3 4 5 6
-
-for $denominator in $columns
-    for $nominator in (1..$denominator)
-        .col-{$nominator}-{$denominator}
-            max-width: ($nominator / $denominator) * 100%
-            width: 100%
-            display: inline-block
